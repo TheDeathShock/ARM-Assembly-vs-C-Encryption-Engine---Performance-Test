@@ -1,2 +1,5 @@
-# ARM-Assembly-vs-C-Encryption-Engine---Performance-Test
-An encryption engine for an STM32 Cortex-M4 microcontroller using ARM Assembly. An equivalent implementation in C is included to compare execution performance and generated code size against the direct ARM Assembly version.
+This is a lightweight XOR-based encryption and decryption engine for an STM32 Cortex-M4 microcontroller using ARM Assembly. The project performs direct memory access to read an input message and encryption key, applies bitwise XOR masking to encrypt each byte, and stores the encrypted output in memory. Implemented reusable assembly macros allowing configurable source, destination, key addresses, and message length parameters for both encryption and decryption operations. Built an equivalent implementation in C to compare execution performance and generated code size against the direct ARM Assembly version.
+
+Warning: This project uses a very basic XOR-based encryption method that is intentionally weak and easily breakable. The purpose of the project is educational and performance-oriented, focusing on comparing low-level ARM Assembly implementation behavior against an equivalent C implementation rather than providing real-world cryptographic security.
+
+Note: Make sure that the input message, output message, and the key have the same size.
